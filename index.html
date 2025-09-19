@@ -170,6 +170,22 @@
             height: 100%;
             filter: invert(1); /* Pour que le logo soit blanc sur fond rouge */
         }
+
+        /* Style pour les initiales */
+        .initiale {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #000;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 0 auto;
+            border: 3px solid #e74c3c;
+        }
     </style>
 </head>
 <body>
@@ -191,12 +207,12 @@
 </nav>
 <!-- Section "Notre équipe" -->
 <section id="equipe">
-    <h2>Notre équipe</h2>
+    <h2>L'équipe</h2>
     <div class="equipe">
         <!-- Arsène -->
         <div class="membre">
             <div class="membre-header" onclick="toggleDescription(this)" aria-expanded="false">
-                <img src="https://via.placeholder.com/150" alt="Arsène">
+                <div class="initiale">A</div>
                 <h3>Arsène</h3>
                 <p>Fondateur / Délégué Principal</p>
                 <span class="fleche">▼</span>
@@ -208,7 +224,7 @@
         <!-- Félix -->
         <div class="membre">
             <div class="membre-header" onclick="toggleDescription(this)" aria-expanded="false">
-                <img src="https://via.placeholder.com/150" alt="Félix">
+                <div class="initiale">F</div>
                 <h3>Félix</h3>
                 <p>Fondateur / Sous-délégué</p>
                 <span class="fleche">▼</span>
@@ -220,7 +236,7 @@
         <!-- Grégoire -->
         <div class="membre">
             <div class="membre-header" onclick="toggleDescription(this)" aria-expanded="false">
-                <img src="https://via.placeholder.com/150" alt="Grégoire">
+                <div class="initiale">G</div>
                 <h3>Grégoire</h3>
                 <p>Fondateur / Et bah c’est déjà pas mal</p>
                 <span class="fleche">▼</span>
@@ -232,7 +248,7 @@
         <!-- Gaston -->
         <div class="membre">
             <div class="membre-header" onclick="toggleDescription(this)" aria-expanded="false">
-                <img src="https://via.placeholder.com/150" alt="Gaston">
+                <div class="initiale">G</div>
                 <h3>Gaston</h3>
                 <p>Développeur / Petit Génie</p>
                 <span class="fleche">▼</span>
@@ -244,7 +260,7 @@
         <!-- Neil -->
         <div class="membre">
             <div class="membre-header" onclick="toggleDescription(this)" aria-expanded="false">
-                <img src="https://via.placeholder.com/150" alt="Neil">
+                <div class="initiale">N</div>
                 <h3>Neil</h3>
                 <p>Gérant des réseaux sociaux</p>
                 <span class="fleche">▼</span>
@@ -256,7 +272,7 @@
         <!-- Nathan -->
         <div class="membre">
             <div class="membre-header" onclick="toggleDescription(this)" aria-expanded="false">
-                <img src="https://via.placeholder.com/150" alt="Nathan">
+                <div class="initiale">N</div>
                 <h3>Nathan</h3>
                 <p>Pignoleur du dimanche</p>
                 <span class="fleche">▼</span>
@@ -274,10 +290,10 @@
         Bon on vous passe les détails (écouter les autres et bien vous représentez ça on connait nous on est là pour faire mieux que vos délégués de l’ année dernière ok).
     </p>
     <ul style="font-size: 1.1rem; line-height: 1.8;">
-        <li>Faire de votre année de 3e la meilleur de votre petite vie de merde.</li>
+        <li>Faire de votre année de 3e la meilleur de de votre courte vie.</li>
         <li>Organisation de combat de boxe (billetterie plus loin pour spectateur interéssé, et dm le compte insta pour combattre).</li>
         <li>Gouter de détraqué par trimestre (voir avec le délégué référent).</li>
-        <li>Mise à disposition de la protection des grands frères de Félix (15 euros l’ heure).</li>
+        <li>Mise à disposition de la protection des grands frères de Félix.</li>
     </ul>
 </section>
 <!-- Pied de page -->
@@ -285,7 +301,6 @@
     <p>Tél : 00</p>
     <p>Suivez-nous sur les réseaux sociaux !</p>
 </footer>
-<!-- Script à la fin du body -->
 <script>
     function toggleDescription(header) {
         const description = header.nextElementSibling;
