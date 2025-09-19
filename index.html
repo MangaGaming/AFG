@@ -149,6 +149,27 @@
         .membre-header[aria-expanded="true"] .fleche {
             transform: rotate(180deg);
         }
+
+        /* Style pour le logo Instagram dans la nav */
+        .nav-social {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s;
+        }
+
+        .nav-social:hover {
+            transform: translateY(-50%) scale(1.2);
+        }
+
+        .nav-social img {
+            width: 100%;
+            height: 100%;
+            filter: invert(1); /* Pour que le logo soit blanc sur fond rouge */
+        }
     </style>
 </head>
 <body>
@@ -156,12 +177,17 @@
 <header>
     <h1>AFG</h1>
     <p>Arsène • Félix • Grégoire</p>
-    <p>Votre équipe pour une année scolaire réussie !</p>
+    <p>Parti de délégué extremement charismatique de génie</p>
 </header>
 <!-- Navigation -->
 <nav>
-    <a href=index.html>Accueil</a>
-    <a href="poker.html">Soirées Poker</a>
+    <a href="index.html">Accueil</a>
+    <a href="index.html">Boxe</a>
+    <a href="index.html">T-Shirt</a>
+    <!-- Logo Instagram -->
+    <a href="https://instagram.com" target="_blank" class="nav-social" aria-label="Suivez-nous sur Instagram">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Logo Instagram">
+    </a>
 </nav>
 <!-- Section "Notre équipe" -->
 <section id="equipe">
@@ -197,7 +223,18 @@
                 <span class="fleche">▼</span>
             </div>
             <div class="membre-description">
-                <p>Grégoire gère le budget des projets avec rigueur et transparence. Il veille à ce que chaque initiative soit financièrement viable et équitable.</p>
+                <p>Je crois qu'il sert qu'à être la.</p>
+            </div>
+        </div>
+        <div class="membre">
+            <div class="membre-header" onclick="toggleDescription(this)" aria-expanded="false">
+                <img src="https://via.placeholder.com/150" alt="Gaston">
+                <h3>Gaston</h3>
+                <p>Dévellopeur</p>
+                <span class="fleche">▼</span>
+            </div>
+            <div class="membre-description">
+                <p>Gaston est le dévellopeur du site web sur lequel vous naviguez.</p>
             </div>
         </div>
     </div>
@@ -206,14 +243,13 @@
 <section id="programme">
     <h2>Notre programme</h2>
     <p>
-        Nous nous engageons à représenter vos idées et à améliorer la vie scolaire.
-        Voici nos priorités pour cette année :
+        Bon on vous passe les détails (écouter les autres et bien vous représentez ça on connait nous on est là pour faire mieux que vos délégués de l’ année dernière ok).
     </p>
     <ul style="font-size: 1.1rem; line-height: 1.8;">
-        <li>Organiser des événements pour renforcer la cohésion entre les classes.</li>
-        <li>Améliorer la communication entre les élèves et l'administration.</li>
-        <li>Proposer des activités extrascolaires accessibles à tous.</li>
-        <li>Développer des projets solidaires et écologiques.</li>
+        <li>Faire de votre année de 3e la meilleur de votre petite vie de merde.</li>
+        <li>Organisation de combat de boxe (billetterie plus loin pour spectateur interéssé, et dm le compte insta pour combattre).</li>
+        <li>Gouter de détraqué par trimestre (voir avec le délégué référent).</li>
+        <li>Mise à disposition de la protection des grands frères de Félix (15 euros l’ heure).</li>
     </ul>
 </section>
 <!-- Pied de page -->
