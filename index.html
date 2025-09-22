@@ -4,189 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AFG - Équipe des délégués 2025</title>
-    <style>
-        /* Réinitialisation et styles de base */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            line-height: 1.6;
-            background-color: #f5f5f5;
-        }
-        /* En-tête */
-        header {
-            background: linear-gradient(135deg, #e74c3c, #c0392b);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 3rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-        header p {
-            font-size: 1.2rem;
-            margin-top: 0.5rem;
-        }
-        /* Navigation */
-        nav {
-            background-color: #c0392b;
-            padding: 0.8rem 0;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1.5rem;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #f1c40f;
-        }
-        /* Sections */
-        section {
-            padding: 2.5rem;
-            max-width: 1200px;
-            margin: 2rem auto;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        section h2 {
-            color: #c0392b;
-            border-bottom: 3px solid #e74c3c;
-            padding-bottom: 0.5rem;
-            font-size: 2rem;
-        }
-        /* Cartes des membres de l'équipe */
-        .equipe {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 2rem;
-            margin-top: 1.5rem;
-        }
-        .membre {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 1.5rem;
-            width: 250px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        .membre:hover {
-            transform: translateY(-5px);
-        }
-        .membre img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #e74c3c;
-        }
-        .membre h3 {
-            color: #c0392b;
-            margin-top: 1rem;
-        }
-        .membre p {
-            font-style: italic;
-            color: #7f8c8d;
-        }
-        /* Pied de page */
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 1.5rem 0;
-            margin-top: 2rem;
-        }
-        footer p {
-            margin: 0.5rem 0;
-        }
-        /* Responsive */
-        @media (max-width: 768px) {
-            .equipe {
-                flex-direction: column;
-                align-items: center;
-            }
-            .membre {
-                width: 80%;
-            }
-            nav a {
-                margin: 0 0.5rem;
-                font-size: 1rem;
-            }
-        }
-        /* Style pour l'en-tête cliquable */
-        .membre-header {
-            cursor: pointer;
-        }
-        /* Style pour la flèche */
-        .fleche {
-            display: block;
-            text-align: center;
-            font-size: 1.5rem;
-            transition: transform 0.3s;
-        }
-        /* Style pour la description (masquée par défaut) */
-        .membre-description {
-            padding: 1rem;
-            background-color: #f0f0f0;
-            border-radius: 0 0 8px 8px;
-            margin-top: -10px;
-            display: none;
-        }
-        /* Animation pour la flèche quand la description est ouverte */
-        .membre-header[aria-expanded="true"] .fleche {
-            transform: rotate(180deg);
-        }
-
-        /* Style pour le logo Instagram dans la nav */
-        .nav-social {
-            position: absolute;
-            right: 1.5rem;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 24px;
-            height: 24px;
-            transition: transform 0.3s;
-        }
-
-        .nav-social:hover {
-            transform: translateY(-50%) scale(1.2);
-        }
-
-        .nav-social img {
-            width: 100%;
-            height: 100%;
-            filter: invert(1); /* Pour que le logo soit blanc sur fond rouge */
-        }
-
-        /* Style pour les initiales */
-        .initiale {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background-color: #000;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            font-weight: bold;
-            margin: 0 auto;
-            border: 3px solid #e74c3c;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 <!-- En-tête -->
@@ -198,13 +16,14 @@
 <!-- Navigation -->
 <nav>
     <a href="index.html">Accueil</a>
-    <a href="index.html">Boxe</a>
-    <a href="index.html">T-Shirt</a>
+    <a href="boxe.html">Boxe</a>
+    <a href="tshirt.html">T-Shirts</a>
     <!-- Logo Instagram -->
     <a href="https://instagram.com" target="_blank" class="nav-social" aria-label="Suivez-nous sur Instagram">
         <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Logo Instagram">
     </a>
 </nav>
+
 <!-- Section "Notre équipe" -->
 <section id="equipe">
     <h2>L'équipe</h2>
@@ -299,7 +118,6 @@
 <!-- Pied de page -->
 <footer id="contact">
     <p>Tél : 00</p>
-    <p>Suivez-nous sur les réseaux sociaux !</p>
 </footer>
 <script>
     function toggleDescription(header) {
